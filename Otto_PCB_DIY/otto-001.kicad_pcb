@@ -11,8 +11,8 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal hide)
     (34 B.Paste user)
     (35 F.Paste user)
     (36 B.SilkS user)
@@ -2698,7 +2698,7 @@
   )
 
   (dimension 59.000995 (width 0.127) (layer F.SilkS)
-    (gr_text "59.001 mm" (at 129.956 84.30171 90) (layer F.SilkS) (tstamp 5C5C462C)
+    (gr_text "59.001 mm" (at 129.956 84.30171 90) (layer F.SilkS)
       (effects (font (size 0.6 0.6) (thickness 0.127)))
     )
     (feature1 (pts (xy 137.301478 54.801213) (xy 130.223579 54.801213)))

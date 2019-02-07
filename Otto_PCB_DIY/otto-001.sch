@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:otto-001-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -566,17 +566,6 @@ Text Label 8040 3425 0    60   ~ 0
 RESET
 Text Label 8040 2945 0    60   ~ 0
 RX-UART
-$Comp
-L conn:CONN_02X04 J12
-U 1 1 5991127B
-P 7845 1900
-F 0 "J12" H 7840 2325 50  0000 C CNN
-F 1 "PROG" H 7840 2255 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_2x04_Pitch2.54mm" H 7845 700 50  0001 C CNN
-F 3 "" H 7845 700 50  0001 C CNN
-	1    7845 1900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1690 1250 1450 1250
 Wire Wire Line
@@ -742,14 +731,6 @@ Wire Wire Line
 	8095 1950 8195 1950
 Wire Wire Line
 	8095 2050 8195 2050
-Wire Wire Line
-	7595 1750 7505 1750
-Wire Wire Line
-	7595 1850 7505 1850
-Wire Wire Line
-	7595 1950 7505 1950
-Wire Wire Line
-	7595 2050 7505 2050
 Text Notes 7250 1670 0    60   ~ 0
 UART-USB
 Text Notes 7955 1670 0    60   ~ 0
@@ -760,17 +741,9 @@ Text Label 8195 1750 0    60   ~ 0
 RX-BLUE
 Text Label 8195 2050 0    60   ~ 0
 TX-BLUE
-Text Label 7505 2050 2    60   ~ 0
-TX-UART
-Text Label 7505 1750 2    60   ~ 0
-RX-UART
 Text Label 8195 1950 0    60   ~ 0
 RX
-Text Label 7505 1950 2    60   ~ 0
-RX
 Text Label 8195 1850 0    60   ~ 0
-TX
-Text Label 7505 1850 2    60   ~ 0
 TX
 Wire Wire Line
 	1450 950  1450 840 
@@ -798,4 +771,31 @@ Wire Wire Line
 	3445 5485 3445 5510
 Wire Wire Line
 	1455 5810 2065 5810
+Text Label 7505 1750 2    60   ~ 0
+RX-UART
+Text Label 7505 1850 2    60   ~ 0
+TX
+Text Label 7505 1950 2    60   ~ 0
+RX
+Text Label 7505 2050 2    60   ~ 0
+TX-UART
+Wire Wire Line
+	7595 2050 7505 2050
+Wire Wire Line
+	7595 1950 7505 1950
+Wire Wire Line
+	7595 1850 7505 1850
+Wire Wire Line
+	7595 1750 7505 1750
+$Comp
+L conn:CONN_02X04 J12
+U 1 1 5991127B
+P 7845 1900
+F 0 "J12" H 7840 2325 50  0000 C CNN
+F 1 "PROG" H 7840 2255 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x04_Pitch2.54mm" H 7845 700 50  0001 C CNN
+F 3 "" H 7845 700 50  0001 C CNN
+	1    7845 1900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
